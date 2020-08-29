@@ -1,4 +1,4 @@
-package com.atul.dp.knapsack;
+package com.atul.dp._01knapsack;
 
 /**
  * Given a set of positive numbers, 
@@ -21,8 +21,20 @@ package com.atul.dp.knapsack;
 	Explanation: The given set cannot be partitioned into two subsets with equal sum.
  */
 public class EqualSubsetSumPartition {
-	static boolean canPartition(int[] num) {
+	private boolean canPartition(int[] num) {
 
 		return false;
+	}
+
+	public static void main(String[] args) {
+		EqualSubsetSumPartition subsetSumPartition = new EqualSubsetSumPartition();
+		int[] num = { 1, 2, 3, 4 };
+		System.out.println(subsetSumPartition.canPartition(num));
+		
+		num = new int[] { 1, 1, 3, 4, 7 };
+		System.out.println(subsetSumPartition.canPartition(num));
+		
+		num = new int[] { 2, 3, 4, 6 };
+		System.out.println(subsetSumPartition.canPartition(num));
 	}
 }
